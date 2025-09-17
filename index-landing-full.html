@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Helpdesk SIMRS — RSUD H.M. Djafar Harun Kab. Kolaka Utara</title>
+  <meta name="description" content="Landing page Helpdesk SIMRS (statis) dengan navbar lengkap dan tema hijau.">
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root{--brand:#198754;--muted:#6c757d;--bg:#f4faf6}
+    html{scroll-behavior:smooth}
+    /* NAVBAR */
+    .navbar{box-shadow:0 2px 10px rgba(25,135,84,.08)}
+    .logo-wrap{width:36px;height:36px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;background:radial-gradient(40px 40px at 28px -6px, rgba(25,135,84,.15), transparent 45%);box-shadow:0 6px 16px rgba(25,135,84,.20);overflow:hidden}
+    .logo-img{width:100%;height:100%;display:block}
+    .brand-text{font-weight:600}
+    /* HERO */
+    .hero{background:radial-gradient(1200px 600px at 85% -10%, rgba(25,135,84,.12), transparent 60%),linear-gradient(180deg,#fff 0%,#eefff3 100%);padding:90px 0 64px}
+    .hero h1{font-weight:800;letter-spacing:.2px}
+    .hero .lead{color:var(--muted);max-width:720px}
+    .btn-primary{background-color:var(--brand);border-color:var(--brand)}
+    .btn-outline-primary{color:var(--brand);border-color:var(--brand)}
+    .btn-outline-primary:hover{background-color:var(--brand);border-color:var(--brand)}
+    /* CARDS */
+    .hiw-card{background:#fff;border:1px solid #e9f3ec;border-radius:16px;padding:24px;height:100%;box-shadow:0 6px 18px rgba(25,135,84,.07);transition:transform .2s,box-shadow .2s}
+    .hiw-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(25,135,84,.12)}
+    .hiw-icon{width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(25,135,84,.10);color:var(--brand);font-size:1.5rem}
+    /* FAQ */
+    .faq-card{background:#fff;border:1px solid #e9f3ec;border-radius:16px;box-shadow:0 6px 18px rgba(25,135,84,.08)}
+    /* FOOTER */
+    footer{background:#0f1729;color:#c9d4e5}
+    footer a{color:#fff;text-decoration:underline}
+  </style>
+</head>
+<body>
+  <!-- =================== NAVBAR =================== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="logo-wrap" aria-hidden="true">
+          <!-- Inline SVG logo (aman untuk CSP) -->
+          <svg class="logo-img" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="Logo RS">
+            <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#198754"/></linearGradient></defs>
+            <circle cx="32" cy="32" r="30" fill="#eafff1"/>
+            <rect x="14" y="18" width="36" height="30" rx="4" fill="url(#g)"/>
+            <rect x="22" y="26" width="20" height="14" rx="2" fill="#eafff1" opacity="0.9"/>
+            <rect x="30" y="26" width="4" height="14" rx="1" fill="url(#g)"/>
+            <rect x="26" y="30" width="12" height="4" rx="1" fill="url(#g)"/>
+            <rect x="18" y="40" width="6" height="8" rx="1" fill="#d6ffee"/>
+            <rect x="28" y="40" width="8" height="8" rx="1" fill="#d6ffee"/>
+            <rect x="40" y="40" width="6" height="8" rx="1" fill="#d6ffee"/>
+          </svg>
+        </span>
+        <span class="brand-text">Helpdesk SIMRS <span class="text-success">RSUD H.M. Djafar Harun Kab. Kolaka Utara</span></span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span class="navbar-toggler-icon"></span></button>
+      <div id="navMain" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#cara-kerja">Cara Kerja</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <!-- Tambahan seperti di file PHP -->
+          <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/1ahNfPBd7wBMoibPEAB2t3XnJgaHvI_f2_txV5Iqe0xU/edit#response=ACYDBNg9xcgoD8YQ-vqs0dWmt3YX8A3gZd7amuwymUHHD6fUuaGoVkOGyJFWLbqO-00nX5A">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="/simrs-complaint/login.php">Masuk</a></li>
+          <li class="nav-item ms-lg-3">
+            <!-- GANTI URL di bawah ke server PHP Anda -->
+            <a class="btn btn-primary px-3" href=" https://docs.google.com/forms/d/e/1FAIpQLSfsCMPvi1kIxk5T6VJjcdwt9YvYXI9A_0zQIWgaGbDNUq1kIQ/viewform
+">
+              <i class="bi bi-send me-1"></i> Buat Laporan
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <h1 class="display-5 mb-3">Punya Kendala dengan SIMRS? <br class="d-none d-lg-block">Laporkan di Sini.</h1>
+          <p class="lead mb-4">Sistem terpusat untuk semua laporan, permintaan, dan pertanyaan terkait SIMRS. Cepat, mudah, dan dapat dilacak.</p>
+          <div class="d-flex gap-2">
+            <a href="https://example.com/tickets/create.php" class="btn btn-primary btn-lg">Buat Laporan Sekarang</a>
+            <a href="#cara-kerja" class="btn btn-outline-primary btn-lg">Lihat Cara Kerja</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+            <div class="d-flex align-items-center mb-3"><div class="hiw-icon me-3"><i class="bi bi-journal-text"></i></div><div><div class="fw-semibold">Isi Formulir</div><small class="text-muted">Jelaskan kendala secara detail.</small></div></div>
+            <div class="d-flex align-items-center mb-3"><div class="hiw-icon me-3"><i class="bi bi-ticket-detailed"></i></div><div><div class="fw-semibold">Nomor Tiket</div><small class="text-muted">Gunakan nomor tiket untuk memantau.</small></div></div>
+            <div class="d-flex align-items-center"><div class="hiw-icon me-3"><i class="bi bi-bell"></i></div><div><div class="fw-semibold">Notifikasi</div><small class="text-muted">Terima update progres.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== HOW IT WORKS =================== -->
+  <section id="cara-kerja" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4"><h2 class="fw-bold">3 Langkah Mudah Melapor</h2><p class="text-muted mb-0">Proses sederhana agar kendala Anda segera tertangani.</p></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4"><div class="hiw-card h-100"><div class="d-flex align-items-center mb-3"><div class="hiw-icon me-3"><i class="bi bi-journal-text"></i></div><h3 class="h5 mb-0">Isi Formulir</h3></div><p class="mb-0 text-muted">Lengkapi data & deskripsi kendala.</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="hiw-card h-100"><div class="d-flex align-items-center mb-3"><div class="hiw-icon me-3"><i class="bi bi-ticket-detailed"></i></div><h3 class="h5 mb-0">Dapatkan Nomor Tiket</h3></div><p class="mb-0 text-muted">Gunakan nomor tiket untuk memantau.</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="hiw-card h-100"><div class="d-flex align-items-center mb-3"><div class="hiw-icon me-3"><i class="bi bi-bell"></i></div><h3 class="h5 mb-0">Terima Notifikasi</h3></div><p class="mb-0 text-muted">Dapatkan pembaruan hingga selesai.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FAQ =================== -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4"><h2 class="fw-bold">Pertanyaan Umum (FAQ)</h2></div>
+      <div class="faq-card p-3 p-md-4 mx-auto" style="max-width: 920px;">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true">Berapa lama laporan saya akan direspons?</button>
+            </h2>
+            <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Tim kami akan merespons dalam waktu maksimal <strong>1×24 jam kerja</strong>.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Siapa yang akan menangani laporan saya?</button>
+            </h2>
+            <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Laporan akan diteruskan ke <strong>tim IT</strong> yang relevan sesuai kategori masalah.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-8"><div class="small">Butuh Bantuan Cepat? Hubungi IT Support di <strong>ext. 123</strong>.</div></div>
+        <div class="col-lg-4 text-lg-end"><div class="small">&copy; 2025 Departemen IT RSUD H.M. Djafar Harun Kab. Kolaka Utara</div></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
